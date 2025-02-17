@@ -40,15 +40,15 @@ $authUrl = $oauth->getAuthUrl();
             font-family: Arial, sans-serif;
             text-align: center;
         }
-
         pre {
             background: #b4e9d5;
             padding: 10px;
             border-radius: 5px;
             display: inline-block;
             word-wrap: break-word;
+            width: 80%;
+            white-space: unset;
         }
-
         .btn {
             display: inline-block;
             margin-top: 20px;
