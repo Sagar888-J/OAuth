@@ -1,0 +1,19 @@
+{
+    "name": "sagarj/oauth-module",
+    "description": "A universal OAuth 2.0 for PHP",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Sagarj\\OauthModule\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Sagar J",
+            "email": "sagarj5000@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
