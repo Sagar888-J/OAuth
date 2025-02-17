@@ -10,7 +10,7 @@ $refresh_token_file = __DIR__ . "/refreshToken.txt";
 $access_token_file = __DIR__ . "/accessToken.txt";
 
 if (!file_exists($refresh_token_file)) {
-    file_put_contents($refresh_token_file, ""); 
+    file_put_contents($refresh_token_file, "");
 }
 if (!file_exists($access_token_file)) {
     file_put_contents($access_token_file, "");
