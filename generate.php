@@ -45,10 +45,8 @@ $authUrl = $oauth->getAuthUrl();
             background: #b4e9d5;
             padding: 10px;
             border-radius: 5px;
-            text-align: left;
             display: inline-block;
             word-wrap: break-word;
-            white-space: pre-wrap;
         }
 
         .btn {
@@ -69,12 +67,14 @@ $authUrl = $oauth->getAuthUrl();
     <?php if (!$hasRefreshToken): ?>
         <a href="<?php echo $authUrl; ?>" class="btn">Authenticate & Get Tokens</a>
     <?php elseif ($hasAccessToken): ?>
-        <h3>Access Token</h3>
-        <pre><?php echo htmlspecialchars($access_token); ?></pre>
-
         <h3>Refresh Token</h3>
         <pre>
             <?php echo htmlspecialchars($refresh_token); ?>
+        </pre>
+
+        <h3>Access Token</h3>
+        <pre>
+            <?php echo ($access_token); ?>
         </pre>
         <br>
         <a href="generate.php" class="btn">Generate Access Token</a>

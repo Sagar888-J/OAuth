@@ -1,4 +1,5 @@
 <?php
+error_reporting(E_ERROR | E_PARSE);
 
 require __DIR__ . '/vendor/autoload.php';
 
@@ -48,10 +49,8 @@ $access_token = (filesize($access_token_file) > 0) ? file_get_contents($access_t
             background: #b4e9d5;
             padding: 10px;
             border-radius: 5px;
-            text-align: left;
             display: inline-block;
             word-wrap: break-word;
-            white-space: pre-wrap;
         }
 
         .btn {
@@ -78,7 +77,7 @@ $access_token = (filesize($access_token_file) > 0) ? file_get_contents($access_t
     <pre><?php echo htmlspecialchars($access_token); ?></pre>
 
     <br>
-    <a href="test.php" class="btn">Get New Access Token</a>
+    <a href="generate.php" class="btn">Get New Access Token</a>
 </body>
 
 </html>
