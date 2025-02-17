@@ -73,7 +73,9 @@ $authUrl = $oauth->getAuthUrl();
         <pre><?php echo htmlspecialchars($access_token); ?></pre>
 
         <h3>Refresh Token</h3>
-        <pre><?php echo htmlspecialchars($refresh_token); ?></pre>
+        <pre>
+            <?php echo htmlspecialchars($refresh_token); ?>
+        </pre>
         <br>
         <a href="generate.php" class="btn">Generate Access Token</a>
     <?php endif; ?>

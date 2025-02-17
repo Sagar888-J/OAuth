@@ -70,7 +70,9 @@ $access_token = (filesize($access_token_file) > 0) ? file_get_contents($access_t
     <h2>OAuth Tokens</h2>
 
     <h3>Refresh Token</h3>
-    <pre><?php echo htmlspecialchars($refresh_token); ?></pre>
+    <pre>
+        <?php echo htmlspecialchars($refresh_token); ?>
+    </pre>
 
     <h3>Access Token</h3>
     <pre><?php echo htmlspecialchars($access_token); ?></pre>
