@@ -47,7 +47,7 @@ $authUrl = $oauth->getAuthUrl();
             border-radius: 5px;
             text-align: left;
             display: inline-block;
-            word-wrap: break-word;
+            word-wrap: break-word; 
             white-space: pre-wrap;
         }
 
